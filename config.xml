@@ -11,7 +11,7 @@
     <!-- Customize your app and platform with the preference element. -->
     <preference name="DisallowOverscroll"         value="true" />
     <preference name="phonegap-version" value="cli-6.1.0" />
-    <plugin name="gap:cordova-plugin-ble-central" source="npm" spec="1.1.3"/>
+    <gap:plugin name="cordova-plugin-ble-central" source="npm" spec="1.1.3"/>
     <plugin name="cordova-plugin-camera" source="npm" spec="~2.1.1"/>
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <icon src="icon.png" />
