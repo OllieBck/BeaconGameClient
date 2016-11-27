@@ -1,0 +1,25 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "info.jasonbeck"
+        },
+        "cordova-plugin-ble-central": {
+            "PACKAGE_NAME": "info.jasonbeck"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "info.jasonbeck"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "info.jasonbeck"
+        }
+    }
+}
