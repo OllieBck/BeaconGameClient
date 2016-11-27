@@ -9,7 +9,7 @@ var charValue = null;
 var pointsValue = null;
 
 function init(){
-  document.getElementById('logYeah').innerHTML="Ready";
+  document.getElementById('logYeah').innerHTML="READY!!";
   document.getElementById('Login').addEventListener('click', logIntoGame);
   document.getElementById('submitValues').addEventListener('click', submitBeacon);
 }
