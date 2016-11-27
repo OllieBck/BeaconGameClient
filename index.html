@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>BlueTooth Beacon Game</title>
+    </head>
+    <body>
+        <h1>BlueToothBeaconGame</h1>
+        <!--<div id="take_photo"><h3>Take Photo</h3></div>-->
+        <img id="patientRoom">
+        <button class="btn" type="button" name="button" id="scanBLE">SCAN</button>
+        <button class="btn" type="button" name="button" id= "connectTo">CONNECT</button>
+        <button class="btn" type="button" name="button" id="disConn">DISCONNECT</button>
+        <div class="notes" id="logYeah"></div>
+        <div class="notes" id="logNotes"></div>
+        <div class="notes" id="connectNotes"></div>
+        <div class="notes" id="start-stop"></div>
+        <div class="notes" id="failed"></div>
+
+        NetID Login <input type="text" name="netID" class="inputbox" id="netid" value=""><br>
+        Server Login <input type="text" name="server" class="inputbox" id="serverLogin" value=""><br>
+        <button type="submit" id="Login" name="LoginTo" value="Login"></button><br>
+        <div class="notes" id="getResponse"></div>
+
+        Token <input type="text" name="netID" class="inputbox" id="token" value=""><br>
+        LocalName <input type="text" name="server" class="inputbox" id="localname" value=""><br>
+        RSSI <input type="text" name="server" class="inputbox" id="rssi" value=""><br>
+        Characteristic <input type="text" name="server" class="inputbox" id="characteristic" value=""><br>
+        Points <input type="text" name="server" class="inputbox" id="points" value=""><br>
+        <input type="submit" id="submitValues" name="submitValues" value="SubmitValues"><br>
+        <div class="notes" id="testthis"></div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/bluetooth.js"></script>
+    </body>
+</html>
