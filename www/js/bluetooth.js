@@ -12,6 +12,7 @@ function init(){
   document.getElementById('logYeah').innerHTML="READY!!";
   document.getElementById('Login').addEventListener('click', logIntoGame);
   document.getElementById('submitValues').addEventListener('click', submitBeacon);
+  document.getElementById('scanBLE').addEventListener('click', launchBLE);
 }
 
 function logIntoGame(){
