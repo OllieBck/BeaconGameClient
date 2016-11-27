@@ -61,6 +61,7 @@ function submitBeacon(){
 // Bluetooth parameters
 function launchBLE(){
   num++;
+  document.getElementById('logYeah').innerHTML=num;
 
 //JSON.stringify(device.advertising)
 
@@ -79,7 +80,6 @@ setTimeout(ble.stopScan,
     function() { document.getElementById('logYeah').innerHTML="stopScan failed"; }
 );
 
-  document.getElementById('logYeah').innerHTML=num;
 }
 
 function failure(){
