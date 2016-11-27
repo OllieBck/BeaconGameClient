@@ -10,7 +10,7 @@ var pointsValue = null;
 
 function init(){
   document.getElementById('logYeah').innerHTML="READY!!";
-  document.getElementById('LoGIN').addEventListener('click', logIntoGame);
+  document.getElementById('log').addEventListener('click', logIntoGame);
   document.getElementById('submitValues').addEventListener('click', submitBeacon);
   document.getElementById('scanBLE').addEventListener('click', launchBLE);
   document.getElementById('connectTo').addEventListener('click', connectToPer);
@@ -65,6 +65,7 @@ function submitBeacon(){
 // Bluetooth parameters
 function launchBLE(){
   num++;
+  document.getElementById('logYeah').innerHTML=num;
 
 //JSON.stringify(device.advertising)
 
@@ -82,7 +83,6 @@ setTimeout(ble.stopScan,
     function() { document.getElementById('logYeah').innerHTML="Scan complete"; },
     function() { document.getElementById('logYeah').innerHTML="stopScan failed"; }
 );
-  document.getElementById('logYeah').innerHTML=num;
 }
 
 function failure(){
