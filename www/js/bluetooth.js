@@ -13,6 +13,11 @@ function init(){
   document.getElementById('Login').addEventListener('click', logIntoGame);
   document.getElementById('submitValues').addEventListener('click', submitBeacon);
   document.getElementById('scanBLE').addEventListener('click', launchBLE);
+<<<<<<< HEAD
+  document.getElementById('connectTo').addEventListener('click', connectToPer);
+  document.getElementById('disConn').addEventListener('click', disconnectFromPer);
+=======
+>>>>>>> c693ee38e9f65bdd6e4d4912cc56b9b4bc90cd81
 }
 
 function logIntoGame(){
