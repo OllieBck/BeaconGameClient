@@ -10,7 +10,7 @@ var pointsValue = null;
 
 function init(){
   document.getElementById('logYeah').innerHTML="READY!!";
-  document.getElementById('Login').addEventListener('click', logIntoGame);
+  document.getElementById('LoGin').addEventListener('click', logIntoGame);
   document.getElementById('submitValues').addEventListener('click', submitBeacon);
   document.getElementById('scanBLE').addEventListener('click', launchBLE);
   document.getElementById('connectTo').addEventListener('click', connectToPer);
@@ -18,6 +18,7 @@ function init(){
 }
 
 function logIntoGame(){
+  document.getElementById('getResponse').innerHTML == "clicked";
   var netIDusername = "username="+document.getElementById('netid').value;
   var loginServer = document.getElementById('serverLogin').value + "/login";
   var newReq = new XMLHttpRequest();
