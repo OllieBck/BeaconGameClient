@@ -18,7 +18,7 @@ function init(){
 }
 
 function logIntoGame(){
-  document.getElementById('getResponse').innerHTML == "clicked";
+  document.getElementById('getResponse').innerHTML = "clicked";
   var netIDusername = "username="+document.getElementById('netid').value;
   var loginServer = document.getElementById('serverLogin').value + "/login";
   var newReq = new XMLHttpRequest();
